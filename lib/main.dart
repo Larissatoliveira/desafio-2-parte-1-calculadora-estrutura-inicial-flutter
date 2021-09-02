@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
-              )),
+              ),),
         ),
         body: SafeArea(
           child: Column(
@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         ElevatedButton(
                           onPressed: () {},
@@ -49,13 +50,11 @@ class MyApp extends StatelessWidget {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 20.0, vertical: 20.0),
                               shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.circular(100.0)),
+                                  borderRadius: BorderRadius.circular(100.0)),
                               primary: Colors.grey),
                           child: Text(
                             "C",
-                            style: TextStyle(
-                                color: Colors.white, fontSize: 30),
+                            style: TextStyle(color: Colors.white, fontSize: 30),
                           ),
                         ),
                         ElevatedButton(
@@ -64,13 +63,11 @@ class MyApp extends StatelessWidget {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 20.0, vertical: 20.0),
                               shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.circular(100.0)),
+                                  borderRadius: BorderRadius.circular(100.0)),
                               primary: Colors.grey),
                           child: Text(
                             "DEL",
-                            style: TextStyle(
-                                color: Colors.white, fontSize: 30),
+                            style: TextStyle(color: Colors.white, fontSize: 30),
                           ),
                         ),
                         ElevatedButton(
@@ -79,13 +76,11 @@ class MyApp extends StatelessWidget {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 20.0, vertical: 20.0),
                               shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.circular(100.0)),
+                                  borderRadius: BorderRadius.circular(100.0)),
                               primary: Colors.grey),
                           child: Text(
                             "%",
-                            style: TextStyle(
-                                color: Colors.white, fontSize: 30),
+                            style: TextStyle(color: Colors.white, fontSize: 30),
                           ),
                         ),
                         ElevatedButton(
@@ -94,20 +89,78 @@ class MyApp extends StatelessWidget {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 20.0, vertical: 20.0),
                               shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.circular(100.0)),
+                                  borderRadius: BorderRadius.circular(100.0)),
                               primary: Colors.orange),
                           child: Text(
                             "/",
-                            style: TextStyle(
-                                color: Colors.white, fontSize: 30),
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 20.0, vertical: 20.0),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(100.0)),
+                              primary: Colors.grey),
+                          child: Text(
+                            "7",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 20.0, vertical: 20.0),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(100.0)),
+                              primary: Colors.grey),
+                          child: Text(
+                            "8",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 20.0, vertical: 20.0),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(100.0)),
+                              primary: Colors.grey),
+                          child: Text(
+                            "9",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 20.0, vertical: 20.0),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(100.0)),
+                              primary: Colors.orange),
+                          child: Text(
+                            "*",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
                           ),
                         ),
                       ],
                     )
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
